@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#BOOK3_이방인</title>
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            background-color: #F5F5F5; /* MUJI 스타일 아이보리 배경 */
+            color: #3E3E3E; /* 차분한 다크 그레이 텍스트 */
+            padding: 50px 20px;
+            line-height: 1.8;
+        }
+
+        /* 페이지 제목 */
+        h1 {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        /* 독서 저널 컨테이너 */
+        .journal-container {
+            max-width: 800px; /* 페이지 너비 제한 */
+            margin: 0 auto; /* 가운데 정렬 */
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* 섹션 간격 */
+        }
+
+        /* 각 섹션 공통 스타일 */
+        .journal-section {
+            background-color: #FFFFFF; /* 섹션 배경 흰색 */
+            border: 2px solid #3E3E3E; /* 외곽선 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            padding: 30px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
+        }
+
+        .journal-section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* 입력 필드 */
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #FAFAFA;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical; /* 감상평 입력창 높이 조절 가능 */
+            height: 150px;
+        }
+
+        /* 이미지 스타일 */
+        .ai-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            border: 1px solid #3E3E3E;
+        }
+
+        /* 감정 평가 스타일 */
+        .ai-evaluation {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* 인덱스 페이지로 돌아가는 버튼 스타일 */
+        .back-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            padding: 12px 20px;
+            font-size: 18px;
+            margin: 40px auto 0;
+            text-align: center;
+            color: #3E3E3E;
+            background-color: #FFFFFF;
+            border: 2px solid #3E3E3E;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📚#BOOK3_이방인</h1>
+
+    <div class="journal-container">
+
+<!-- 작가 -->
+<div class="journal-section">
+    <h2>작가</h2>
+    <p>알베르 카뮈</p>
+</div>
+
+<!-- 출판일 -->
+<div class="journal-section">
+    <h2>출판일</h2>
+    <p>1942</p>
+</div>
+
+<!-- 감상평 -->
+<div class="journal-section">
+    <h2>감상평</h2>
+    <p>이 책 또한 고등학생이었던 나에게 큰 인상을 남긴 책이다. 난 이방인을 읽고, '정의하고 의미 부여하는 인간'에 대해 깊이 생각하게 되었다. 주인공 뫼르소는 세상의 규범과 기대를 따르지 않으며, 사건과 상황에 대한 감정적인 반응을 보이지 않는다. 그의 무관심은 우리가 일반적으로 삶의 의미를 찾는 방식, 즉 사건에 의미를 부여하고 정의를 내리는 방식과 크게 대조된다. 이 작품을 통해, 인간은 본능적으로 세상과 상황에 의미를 부여하며 살아간다는 사실을 다시금 깨달았다. 뫼르소처럼 의미를 거부할 수 있다면, 우리 역시 자신만의 의미와 목적을 만들어가는 존재라는 점에서, 우리가 찾는 의미와 정의가 어떻게 삶의 방향을 형성하는지를 고민하게 되었다.</p>
+</div>
+
+        <!-- AI 그림 -->
+        <div class="journal-section">
+            <h2>AI가 생성한 감상평 이미지</h2>
+             <img src="삶의 의미를 찾는 방식, 즉 사건에 의미를 부여하고 정의를 내리는 방식.png" alt=이방인">
+        </div>
+
+        <!-- AI 감정 평가 -->
+        <div class="journal-section">
+            <h2>AI 감정 평가</h2>
+            <p class="ai-evaluation">이 감상평은 이방인의 핵심 주제에 대한 깊은 통찰을 잘 드러내고 있습니다. 주인공 뫼르소의 무관심과 인간이 삶에 의미를 부여하는 방식에 대한 대조를 통해, 우리가 세상에 의미를 부여하는 존재임을 깨닫게 되는 과정을 잘 설명하고 있습니다. 감상평이 논리적이고 체계적으로 전개되며, 뫼르소의 태도를 통해 인간 존재의 본질을 고민하는 깊이를 느낄 수 있습니다. 특히 "우리가 찾는 의미와 정의가 어떻게 삶의 방향을 형성하는지"에 대한 고민을 잘 표현하여, 독자에게 큰 여운을 남기는 감상평이라 할 수 있습니다.</p>
+        </div>
+
+       <!-- 인덱스 페이지로 돌아가는 버튼 -->
+        <a href="index.html" class="back-btn">뒤로 가기</a>
+
+    </div>
+
+</body>
+
+</html>

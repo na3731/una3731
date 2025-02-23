@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#BOOK1_유예</title>
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            background-color: #F5F5F5; /* MUJI 스타일 아이보리 배경 */
+            color: #3E3E3E; /* 차분한 다크 그레이 텍스트 */
+            padding: 50px 20px;
+            line-height: 1.8;
+        }
+
+        /* 페이지 제목 */
+        h1 {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        /* 독서 저널 컨테이너 */
+        .journal-container {
+            max-width: 800px; /* 페이지 너비 제한 */
+            margin: 0 auto; /* 가운데 정렬 */
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* 섹션 간격 */
+        }
+
+        /* 각 섹션 공통 스타일 */
+        .journal-section {
+            background-color: #FFFFFF; /* 섹션 배경 흰색 */
+            border: 2px solid #3E3E3E; /* 외곽선 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            padding: 30px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
+        }
+
+        .journal-section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* 입력 필드 */
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #FAFAFA;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical; /* 감상평 입력창 높이 조절 가능 */
+            height: 150px;
+        }
+
+        /* 이미지 스타일 */
+        .ai-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            border: 1px solid #3E3E3E;
+        }
+
+        /* 감정 평가 스타일 */
+        .ai-evaluation {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* 인덱스 페이지로 돌아가는 버튼 스타일 */
+        .back-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            padding: 12px 20px;
+            font-size: 18px;
+            margin: 40px auto 0;
+            text-align: center;
+            color: #3E3E3E;
+            background-color: #FFFFFF;
+            border: 2px solid #3E3E3E;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .submit-btn:hover {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📚#BOOK1_유예</h1>
+
+    <div class="journal-container">
+
+<!-- 작가 -->
+<div class="journal-section">
+    <h2>작가</h2>
+    <p>오상원</p>
+</div>
+
+<!-- 출판일 -->
+<div class="journal-section">
+    <h2>출판일</h2>
+    <p>1955</p>
+</div>
+
+<!-- 감상평 -->
+<div class="journal-section">
+    <h2>감상평</h2>
+    <p>고등학생 시절 처음 이 책을 읽고 나서, 전쟁 포로의 운명과 인간 존엄성에 대해 다시금 생각하게 되었다. 이전까지 포로를 단순한 희생자로만 여겼지만, 이들이 복잡한 감정과 선택의 기로에 놓여 있음을 깨닫게 되었다. 특히 주인공의 내면적 갈등이 깊은 인상을 남겼으며, 죽음을 앞둔 인간의 심리를 생생하게 묘사한 점이 인상적이었다. 전쟁이 개인에게 남기는 상처와 두려움의 깊이를 다시금 곱씹게 했고, 마치 내가 포로가 되어 숨을 헐떡이는 듯한 몰입감을 준 책이었다.</p>
+</div>
+
+        <!-- AI 그림 -->
+        <div class="journal-section">
+            <h2>AI가 생성한 감상평 이미지</h2>
+              <img src="무기력함과 절망감을 그리는 이미지.png" alt=유예">
+        </div>
+
+        <!-- AI 감정 평가 -->
+        <div class="journal-section">
+            <h2>AI 감정 평가</h2>
+            <p class="ai-evaluation">이 감상평은 작품의 주제를 명확하게 파악하고 있으며, 개인적인 경험을 자연스럽게 녹여내어 독자에게 깊은 몰입감을 전달하는 점이 인상적입니다. 전쟁 포로의 운명과 인간 존엄성에 대한 고민이 잘 드러나고, 주인공의 내면적 갈등과 심리 묘사를 통해 전쟁의 비극을 잘 표현하고 있습니다. 또한 "숨을 헐떡이는 듯한 몰입감"이라는 표현은 독서 경험을 효과적으로 전달하며, 작품이 독자에게 미친 영향을 잘 설명합니다.</p>
+        </div>
+
+        <!-- 인덱스 페이지로 돌아가는 버튼 -->
+        <a href="index.html" class="back-btn">뒤로 가기</a>
+
+    </div>
+
+</body>
+
+</html>
